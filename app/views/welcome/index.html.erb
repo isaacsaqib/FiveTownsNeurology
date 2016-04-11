@@ -5,6 +5,55 @@
 
 
 	<body>
+
+	<script type="text/javascript" src="assets/jquery.slides.js"></script>
+	<script type="text/javascript" src="assets/jquery.slides.min.js"></script>
+
+	  <script>
+	    $(function(){
+	      $("#slides").slidesjs({
+	        width: 940,
+	        height: 200,
+	        navigation: {
+		      active: false,
+		        // [boolean] Generates next and previous buttons.
+		        // You can set to false and use your own buttons.
+		        // User defined buttons must have the following:
+		        // previous button: class="slidesjs-previous slidesjs-navigation"
+		        // next button: class="slidesjs-next slidesjs-navigation"
+		      effect: "fade"
+		        // [string] Can be either "slide" or "fade".
+		    },
+		   play: {
+		      active: false,
+		        // [boolean] Generate the play and stop buttons.
+		        // You cannot use your own buttons. Sorry.
+		      effect: "fade",
+		        // [string] Can be either "slide" or "fade".
+		      interval: 4000,
+		        // [number] Time spent on each slide in milliseconds.
+		      auto: true,
+		        // [boolean] Start playing the slideshow on load.
+		      swap: true,
+		        // [boolean] show/hide stop and play buttons
+		      pauseOnHover: false,
+		        // [boolean] pause a playing slideshow on hover
+		      restartDelay: 1500
+		        // [number] restart delay on inactive slideshow
+		    },
+		   pagination: {
+		      active: false,
+		        // [boolean] Create pagination items.
+		        // You cannot use your own pagination. Sorry.
+		      effect: "slide"
+		        // [string] Can be either "slide" or "fade".
+		    }
+
+	      });
+	    });
+	  </script>
+
+
 		<ul id="nav">
 			<li>HOME</li>
 			<li>SLEEP CENTER</li>
@@ -15,12 +64,34 @@
 			<li>REVIEWS</li>
 		</ul>
 
-	<div id="intro-div">
-		<h1>FIVE TOWNS NUEROSCIENCE RESEARCH</h1>
-	</div>
 
 
-	<ul class="details-list">
+	<img id='brain' src="assets/brainscan.jpg">
+	<h1 style="text-align: center; font-size: 60px;font-family: 'Adelle Sans'; margin-bottom: 0px;"> THE NEUROSCIENCE FOREFRONT. </h1>
+	<h2 style="text-align: center; font-family: 'Adelle Sans';margin-top:0px;">Experience And Expertise In Clinical Management.</h2>
+
+<hr>
+
+
+   <div id="slides">
+   <img src="assets/review-1.jpg">
+   <img src="assets/review-2.jpg">
+  </div>
+
+ <hr>
+
+  <div id="about-us">
+  <h1>ABOUT US</h1>
+  <h2>Putting Our Patients First.</h2>
+
+  <p>
+  	• Five Towns Neuroscience Research stands committed to seek out well-designed trials that can help advance potentially beneficial drugs to market readiness while simultaneously offering our patients the latest scientific advances.
+  </p>
+  <p>	
+	• We offer rapid turnaround, unprecedented expertise in clinical trials management, access to diverse patient populations that until now have been largely untapped, integration with a cooperative and thorough IRB, proximity to the New York City Metropolitan area and familiarity with study design and management.
+  </p>
+</div>
+<!-- 	<ul class="details-list">
 		<h1>WHY US?</h1>
 			<li>1</li>
 			<li>2</li>
@@ -41,7 +112,7 @@
 			<li>2</li>
 			<li>3</li>
 	</ul>
-
+ -->
 
 
 
